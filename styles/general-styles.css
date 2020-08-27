@@ -1,0 +1,110 @@
+html, body {
+  height: 100%;
+  background: #EBEFEE;
+}
+
+label {
+  margin: 0px;
+}
+
+.calendar-table th {
+  width: 14.3%;
+  font-weight: 500;
+}
+
+.calendar-table td {
+  height: 100px;
+  font-weight: 500;
+  vertical-align: top;
+  border: 1px solid #eef1ef;
+  padding: 0px !important;
+  cursor: pointer;
+}
+.calendar-table td:hover {
+  background: rgba(47, 218, 180, 0.1);
+}
+.calendar-table td:focus, .calendar-table td:active {
+  background: rgba(47, 218, 180, 0.2);
+}
+
+.calendar-table td.today {
+  background: rgba(47, 218, 180, 0.3);
+}
+.calendar-table td.today:hover {
+  background: rgba(47, 218, 180, 0.4);
+}
+.calendar-table td.today:focus, .calendar-table td.today:active {
+  background: rgba(47, 218, 180, 0.5);
+}
+
+
+/* colores */
+
+:root {
+  --own1: #2FDAB4;
+  --own2: #2ECDA9;
+  --own3: #2CC3A1;
+  --own4: #27B494;
+
+  --own-danger1: #2FDAB4;
+  --own-danger2: #2ECDA9;
+  --own-danger3: #2CC3A1;
+  --own-danger4: #27B494;
+}
+
+/* Background */
+.bg-own {
+  background-color: #2FDAB4 !important;
+}
+
+a.bg-own:hover, a.bg-own:focus,
+button.bg-own:hover,
+button.bg-own:focus {
+  background-color: #2ECDA9 !important;
+}
+
+/* Background buttons*/
+.btn-own {
+  color: #fff;
+  background-color: #2FDAB4;
+  border-color: #2FDAB4;
+}
+
+.btn-own:hover {
+  color: #fff;
+  background-color: #2ECDA9;
+  border-color: #2CC3A1;
+}
+
+.btn-own:focus, .btn-own.focus {
+  color: #fff;
+  background-color: #2ECDA9;
+  border-color: #2CC3A1;
+  box-shadow: 0 0 0 0.2rem rgba(47, 218, 180, 0.5);
+}
+
+.btn-own.disabled, .btn-own:disabled {
+  color: #fff;
+  background-color: #2FDAB4;
+  border-color: #2FDAB4;
+}
+
+.btn-own:not(:disabled):not(.disabled):active, .btn-own:not(:disabled):not(.disabled).active,
+.show > .btn-own.dropdown-toggle {
+  color: #fff;
+  background-color: #2CC3A1;
+  border-color: #27B494;
+}
+
+.btn-own:not(:disabled):not(.disabled):active:focus, .btn-own:not(:disabled):not(.disabled).active:focus,
+.show > .btn-own.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(47, 218, 180, 0.5);
+}
+
+/* Inputs form */
+
+.form-control:focus {
+  background-color: #fff;
+  border-color: #2FDAB499;
+  box-shadow: 0 0 0 0.2rem rgba(47, 218, 180, 0.25);
+}
