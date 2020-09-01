@@ -2,18 +2,24 @@ html, body {
   height: 100%;
   background: #EBEFEE;
 }
-
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #2FDAB4;
+  border-radius: 4px;
+}
 label {
   margin: 0px;
 }
 
+/* ==================== general calendar styles ==================== */
 .calendar-table th {
   width: 14.3%;
   font-weight: 500;
 }
-
 .calendar-table td {
-  height: 100px;
   font-weight: 500;
   vertical-align: top;
   border: 1px solid #eef1ef;
@@ -26,7 +32,6 @@ label {
 .calendar-table td:focus, .calendar-table td:active {
   background: rgba(47, 218, 180, 0.2);
 }
-
 .calendar-table td.today {
   background: rgba(47, 218, 180, 0.3);
 }
@@ -36,10 +41,10 @@ label {
 .calendar-table td.today:focus, .calendar-table td.today:active {
   background: rgba(47, 218, 180, 0.5);
 }
+/* ==================== general calendar styles ==================== */
 
 
 /* colores */
-
 :root {
   --own1: #2FDAB4;
   --own2: #2ECDA9;
@@ -108,3 +113,44 @@ button.bg-own:focus {
   border-color: #2FDAB499;
   box-shadow: 0 0 0 0.2rem rgba(47, 218, 180, 0.25);
 }
+
+
+
+
+
+
+.no-arrow::after {
+  display: inline-block;
+  margin-left: 0;
+  vertical-align: 0;
+  content: "";
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+}
+
+.dropdown-item {
+  color: #6c757d !important;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  color: white !important;
+  background-color: #2FDAB4;
+}
+
+.dropdown-item.disabled, .dropdown-item:disabled {
+  color: #6c757d99;
+  pointer-events: none;
+  background-color: transparent;
+}
+
+/* .dropdown-item-text {
+  display: block;
+  padding: 0.25rem 1.5rem;
+  color: #212529;
+} */

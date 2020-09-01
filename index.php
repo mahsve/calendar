@@ -11,7 +11,7 @@ session_destroy();
     <link rel="shortcut icon" href="images/app/icon.png" type="image/png">
     <link rel="stylesheet" href="styles/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="styles/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="styles/generales.css">
+    <link rel="stylesheet" href="styles/general-styles.css">
   </head>
 
   <body>
