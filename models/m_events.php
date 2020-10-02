@@ -25,7 +25,8 @@ class model_events extends connect {
     $results  = false;
     $query = "SELECT *
       FROM events
-      WHERE `date` BETWEEN '".htmlspecialchars($data['start_day'])."' AND '".htmlspecialchars($data['end_day'])."'
+      WHERE `date` BETWEEN '".htmlspecialchars($data['start_day'])."'
+      AND '".htmlspecialchars($data['end_day'])."'
     ";
 
     $consult = mysqli_query($this->connection, $query);
